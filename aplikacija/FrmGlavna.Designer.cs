@@ -112,8 +112,9 @@
             this.IstRezultati.FormattingEnabled = true;
             this.IstRezultati.Location = new System.Drawing.Point(290, 28);
             this.IstRezultati.Name = "IstRezultati";
-            this.IstRezultati.Size = new System.Drawing.Size(147, 82);
+            this.IstRezultati.Size = new System.Drawing.Size(147, 342);
             this.IstRezultati.TabIndex = 7;
+            this.IstRezultati.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.IstRezultati_MouseDoubleClick);
             // 
             // btIzracunaj
             // 
@@ -123,6 +124,7 @@
             this.btIzracunaj.TabIndex = 8;
             this.btIzracunaj.Text = "Izračunaj";
             this.btIzracunaj.UseVisualStyleBackColor = true;
+            this.btIzracunaj.Click += new System.EventHandler(this.btIzracunaj_Click);
             // 
             // btnOcisti
             // 
@@ -132,8 +134,9 @@
             this.btnOcisti.TabIndex = 9;
             this.btnOcisti.Text = "Očisti";
             this.btnOcisti.UseVisualStyleBackColor = true;
+            this.btnOcisti.Click += new System.EventHandler(this.btnOcisti_Click);
             // 
-            // Form1
+            // FrmGlavna
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -148,8 +151,9 @@
             this.Controls.Add(this.IbIOpseg);
             this.Controls.Add(this.IbIPovršina);
             this.Controls.Add(this.IbIPolumjer);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "FrmGlavna";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Glavna forma aplikacije";
             this.ResumeLayout(false);
             this.PerformLayout();
 
