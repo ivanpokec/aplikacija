@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace aplikacija
 {
-    public partial class Form1 : Form
+    public partial class FrmGlavna : Form
     {
-        public Form1()
+        public FrmGlavna()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
